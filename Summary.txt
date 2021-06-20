@@ -1,0 +1,20 @@
+Battle of the NETS strategies
+
+
+Project Description: The goal of this project is to discover whether or not it is possible to accurately predict a University’s computer science program ranking based on data collected from the University’s subreddit. That is, searching through the subreddits of the top-20 listed programs, we looked for certain cs-related keywords throughout the posts and performed various methods for analyzing this data in order to determine a relative ranking. Though we had predicted that the objective nature of PageRank would imply accuracy, after counting the frequencies of the cs-related keywords for each subreddit, turning the university’s posts into documents and using the Vector Space Model to determine similarity, and implementing PageRank, we ultimately saw that relative keyword frequencies were the best predictor of a university’s ranking. 
+
+
+This project primarily took on an empirical analysis approach, relying on graph algorithms (PageRank), as well as Document Search (Vector Space), to determine relative rankings. 
+
+
+Work Breakdown
+1. Use the PRAW and the Reddit API (source: https://www.reddit.com/dev/api/) to extract the 500 newest posts and write the titles of each post, along with the body, to a newly created text file
+   1. Priya
+2. Convert subreddit text files into documents and build upon the the Vector Space Model (built on starter code from HW4)
+   1. Anshul
+3. Implementing PageRank to compare information from the predetermined subreddits 
+   1. Saurabh
+4. Perform a statistical analysis of the returned frequencies and similarity scores, as well as parse the data into a presentable and understandable format (i.e. graphs, tables, etc.)
+   1. Anshul
+
+Note: Steps 2 and 3 were done in conjunction with step 1, and were integrated and tested later on with the text files populated in step 1 to ensure a more horizontal approach.
